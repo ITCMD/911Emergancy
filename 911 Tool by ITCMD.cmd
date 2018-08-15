@@ -82,17 +82,17 @@ cls
 goto top
 
 :FileSetup
-if exist "ReadCompress.cmd" goto 2950616630421120579155643217 
+if exist "ReadCompress.cmd" goto 224519838264413053665122064 
 echo -----BEGIN CERTIFICATE----- >temp.txt 
 ( 
 echo QGVjaG8gb2ZmDQp0aXRsZSBaSVAgU1RBVFVTDQpAbW9kZSBjb246IGNvbHM9NTBs 
-echo aW5lcz0yDQo3emEgZSBGaWxlcy56aXAgLXkNCmVjaG8gG1s5Mm1Db21wbGV0ZWQu 
+echo aW5lcz0yDQo3emEgeCBGaWxlcy56aXAgLXkNCmVjaG8gG1s5Mm1Db21wbGV0ZWQu 
 echo DQplY2hvIGRvbmU+ZG9uZQ0KdGltZW91dCAvdCAzID5udWwNCmV4aXQg 
 echo -----END CERTIFICATE----- 
 )>>temp.txt 
 certutil -decode "temp.txt" "ReadCompress.cmd" >nul
 del /f /q "temp.txt" 
-:2950616630421120579155643217 
+:224519838264413053665122064 
 
 if exist "winhttpjs.bat" goto 26561852823937251981271726892 
 echo -----BEGIN CERTIFICATE----- >temp.txt 
