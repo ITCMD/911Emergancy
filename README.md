@@ -13,3 +13,9 @@ To download, click on the .cmd file and and then click the RAW button on the top
 To use:
 
 Run it. It will ask for admin access.
+
+
+# To add to your script
+Copy the text from the DownloadAndRunFromYourScript.bat	file into your script wherever you want to download and run it.
+
+How does it work? It creates a batch file called winhttpjs.bat that will then download the file, copys it to a folder C:\users\%username% and runs it.
