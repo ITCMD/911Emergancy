@@ -8,6 +8,14 @@ title ITCMD 911 Kit
 if not "%1"=="am_admin" (echo Loading . . . & echo %cd%>C:\users\Public\CDTT.txt & powershell start -verb runas '%0' am_admin & exit /b)
 set /p cdd=<C:\users\Public\CDTT.txt
 cd %cdd% 
+cd %cdd% 
+if "%cdd%"=="D:\ " D:
+if "%cdd%"=="E:\ " E:
+if "%cdd%"=="F:\ " F:
+if "%cdd%"=="G:\ " G:
+if "%cdd%"=="H:\ " H:
+if "%cdd%"=="I:\ " I:
+if "%cdd%"=="J:\ " J:
 if not exist "Files\itcmd.txt" goto setup
 :top
 reg Query "HKLM\Hardware\Description\System\CentralProcessor\0" | find /i "x86" > NUL && set OS=32 || set OS=64
